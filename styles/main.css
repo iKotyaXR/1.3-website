@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "TTLakes Bold";
+    src: url("/fonts/TTLakes-Bold.ttf");
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url("/fonts/TTLakes-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TTLakes Light";
+    src: url("/fonts/TTLakes-Light.ttf");
+}
+
+
+body {
+    margin: 0;
+    background-color: #F8F8F8;
+    font-family: "TTLakes";
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #7E7E82
+}

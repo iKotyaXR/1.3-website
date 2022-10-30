@@ -1,0 +1,44 @@
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-logo::before {
+    content: url("/svg/chat.svg");
+    padding-top: 5px;
+    align-self: center;
+}
+
+.people-logo::before {
+    content: url("/svg/people.svg");
+    padding-top: 4px;
+    align-self: center;
+}
+
+.menu-logo::before {
+    content: url("/svg/menu.svg");
+    padding-top: 4.5px;
+    align-self: center;
+}
+
+.phone-logo::before {
+    content: url("/svg/phone.svg");
+    padding-top: 4px;
+    align-self: center;
+}
+
+.search-logo::before {
+    content: url("/svg/search.svg");
+    padding-top: 5px;
+    align-self: center;
+}
+
+.service-logo::before {
+    content: url("/svg/service.svg");
+    padding-top: 5px;
+    align-self: center;
+}
