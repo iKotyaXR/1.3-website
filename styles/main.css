@@ -13,6 +13,9 @@
     src: url("/fonts/TTLakes-Light.ttf");
 }
 
+html {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -21,7 +24,8 @@ body {
 }
 
 ul,
-li {
+li,
+p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -30,4 +34,9 @@ li {
 a {
     text-decoration: none;
     color: #7E7E82
+}
+
+button {
+    border: 0;
+    cursor: pointer;
 }
