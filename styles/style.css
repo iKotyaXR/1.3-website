@@ -11,7 +11,8 @@
 
 .title__text {
     font-size: 28px;
-    font-family: "TTLakes Bold";
+    font-family: "TTLakes";
+    font-weight: 900;
     line-height: 40px;
     margin-top: 8px;
     margin-bottom: 16px;

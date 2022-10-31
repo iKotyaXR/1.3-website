@@ -1,16 +1,20 @@
 @font-face {
-    font-family: "TTLakes Bold";
-    src: url("/fonts/TTLakes-Bold.ttf");
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 900;
+    src: url("/fontes/TTLakes-Bold.ttf"),
+        url("/fontes/TTLakes-Bold.woff") format("woff"),
+        url("/fontes/TTLakes-Bold.eot") format("eot"),
 }
 
 @font-face {
     font-family: "TTLakes";
-    src: url("/fonts/TTLakes-Regular.ttf");
-}
-
-@font-face {
-    font-family: "TTLakes Light";
-    src: url("/fonts/TTLakes-Light.ttf");
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fontes/TTLakes-Regular.ttf"),
+        url("/fontes/TTLakes-Regular.woff2") format("woff2"),
+        url("/fontes/TTLakes-Regular.woff") format("woff"),
+        url("/fontes/TTLakes-Regular.eot") format("eot")
 }
 
 html {
@@ -21,6 +25,7 @@ body {
     margin: 0;
     background-color: #F8F8F8;
     font-family: "TTLakes";
+    font-weight: 500;
 }
 
 ul,
