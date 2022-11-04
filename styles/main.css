@@ -17,27 +17,29 @@
     url("../assets/fonts/TTLakes-Regular.eot") format("eot");
 }
 
-html {
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:active,
+a:active {
+  outline: none;
 }
 
 body {
-  margin: 0;
   background-color: #f8f8f8;
   font-family: "TTLakes";
   font-weight: 500;
 }
-
-ul,
-li,
-p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
-  text-decoration: none;
   color: #7e7e82;
 }
 
