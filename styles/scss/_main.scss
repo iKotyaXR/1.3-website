@@ -2,19 +2,16 @@
   font-family: "TTLakes";
   font-style: bold;
   font-weight: 900;
-  src: url("../assets/fonts/TTLakes-Bold.ttf"),
-    url("../assets/fonts/TTLakes-Bold.woff") format("woff"),
-    url("../assets/fonts/TTLakes-Bold.eot") format("eot");
+  src: url("../../assets/fonts/TTLakes-Bold.ttf"), url("../../assets/fonts/TTLakes-Bold.woff") format("woff"),
+    url("../../assets/fonts/TTLakes-Bold.eot") format("eot");
 }
 
 @font-face {
   font-family: "TTLakes";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/TTLakes-Regular.ttf"),
-    url("../assets/fonts/TTLakes-Regular.woff2") format("woff2"),
-    url("../assets/fonts/TTLakes-Regular.woff") format("woff"),
-    url("../assets/fonts/TTLakes-Regular.eot") format("eot");
+  src: url("../../assets/fonts/TTLakes-Regular.ttf"), url("../../assets/fonts/TTLakes-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/TTLakes-Regular.woff") format("woff"), url("../../assets/fonts/TTLakes-Regular.eot") format("eot");
 }
 
 *,
