@@ -64,7 +64,11 @@ label {
     border: 2px solid rgba(0, 0, 0, 0);
   }
   input[type="radio"] {
-    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    visibility: hidden;
+    appearance: none;
+    position: absolute;
   }
 
   &__list {
@@ -80,6 +84,14 @@ label {
     &::-webkit-scrollbar {
       width: 0;
       height: 0;
+    }
+    &::after{
+      right: 15px;
+      content: "";
+      position: absolute;
+      width: 2em;
+      background-image: linear-gradient(to right,transparent,#f8f8f8);
+      height: 10%;
     }
   }
 }

@@ -31,10 +31,11 @@ a:active {
   outline: none;
 }
 
-body {
+body,html {
   background-color: #f8f8f8;
   font-family: "TTLakes";
   font-weight: 500;
+  height: 100%;
 }
 a {
   color: #7e7e82;
