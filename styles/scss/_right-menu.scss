@@ -1,4 +1,5 @@
 .left-menu {
+  font-family: "TTLakes Medium";
   background-color: white;
   display: flex;
   max-width: 320px;
@@ -6,10 +7,11 @@
   flex-direction: column;
   padding: 24px;
   min-height: 100%;
+  padding-bottom: 0;
   &__header {
     display: flex;
     justify-content: space-between;
-    height: 88px;
+    height: 60px;
   }
 
   &__right-side {
@@ -23,11 +25,11 @@
   }
 
   &__content {
-    margin-bottom: 40px;
-
+    display: block;
     ul {
+      overflow: hidden;
       li {
-        padding: 16px 0px;
+        padding: 1.05vh 0px;
         a {
           color: black;
           transition: 0.5s;
@@ -58,23 +60,29 @@
 
   &__footer {
     margin-top: auto;
-
+    display: block;
     &__contacts {
       display: flex;
       li {
         margin-right: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 0.5vh;
       }
     }
     &__email {
-      margin-bottom: 12px;
+      margin-bottom: 0.5vh;
+      a {
+        color: black;
+      }
     }
     &__number {
+      a {
+        color: black;
+      }
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 40px;
     }
     &__language {
+      margin-top: 1vh;
       display: flex;
       li {
         margin-right: 7px;
@@ -92,6 +100,43 @@
 
         &:hover {
           transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 481px) {
+  .left-menu {
+    &__content {
+      ul {
+        li {
+          padding: 1.2vh 0px;
+        }
+      }
+    }
+    &__footer {
+      margin-top: auto;
+
+      &__contacts {
+        margin-bottom: 1.1vh;
+      }
+      &__number {
+        margin: 1.2vh 0;
+      }
+    }
+  }
+}
+
+@media (min-height: 600px) {
+  .left-menu {
+    &__header {
+      height: 80px;
+    }
+    &__content {
+      ul {
+        li {
+          padding: 1.4vh 0px;
         }
       }
     }

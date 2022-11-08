@@ -7,42 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <nav class="left-menu">
+    <div class="left-menu">
       <section class="left-menu__header">
         <div class="left-menu__right-side">
-          <button type="button" class="button cross-logo" aria-label="Закрыть"></button>
+          <button
+            type="button"
+            class="button cross-logo"
+            aria-label="Закрыть"
+          ></button>
           <img src="./assets/icons/logo.svg" alt="CPS Logo" />
         </div>
         <div class="left-menu__left-side">
-          <button type="button" class="button search-logo-2" aria-label="Поиск"></button>
+          <button
+            type="button"
+            class="button search-logo-2"
+            aria-label="Поиск"
+          ></button>
         </div>
       </section>
       <section class="left-menu__content">
-        <ul>
-          <li><a href="#">Ремонт техники</a></li>
-          <li><a href="#">Услуги и сервисы</a></li>
-          <li><a href="#">Корпоративным клиентам</a></li>
-          <li><a href="#">Продавцам техники</a></li>
-          <li><a href="#">Партнерам</a></li>
-          <li><a href="#">Производителям</a></li>
-          <li><a href="#">Наши сервисные центры</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href="#" aria-label="Ремонт техники">Ремонт техники</a></li>
+            <li>
+              <a href="#" aria-label="Услуги и сервисы">Услуги и сервисы</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Корпоративным клиентам"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Продавцам техники">Продавцам техники</a>
+            </li>
+            <li><a href="#" aria-label="Партнерам">Партнерам</a></li>
+            <li><a href="#" aria-label="Производителям">Производителям</a></li>
+            <li>
+              <a href="#" aria-label="Наши сервисные центры"
+                >Наши сервисные центры</a
+              >
+            </li>
+            <li><a href="#" aria-label="Контакты">Контакты</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="left-menu__footer">
         <ul class="left-menu__footer__contacts">
-          <li><button type="button" class="button phone-logo" aria-label="Звонок"></button></li>
-          <li><button type="button" class="button chat-logo" aria-label="Чат"></button></li>
-          <li><button type="button" class="button people-logo" aria-label="Человек"></button></li>
+          <li>
+            <button
+              type="button"
+              class="button phone-logo"
+              aria-label="Звонок"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="button chat-logo"
+              aria-label="Чат"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="button people-logo"
+              aria-label="Человек"
+            ></button>
+          </li>
         </ul>
-        <div class="left-menu__footer__email">mail@cps.com</div>
-        <div class="left-menu__footer__number">8 800 890 8900</div>
+        <div class="left-menu__footer__email">
+          <a href="mailto:" aria-label="Почта">mail@cps.com</a>
+        </div>
+        <div class="left-menu__footer__number">
+          <a href="tel:" aria-label="Телефон">8 800 890 8900</a>
+        </div>
         <ul class="left-menu__footer__language">
-          <li><a href = "#">RU</a></li>
-          <li><a href = "#">EN</a></li>
-          <li><a href = "#">CH</a></li>
+          <li><a href="#" aria-label="Русский язык">RU</a></li>
+          <li><a href="#" aria-label="Английский язык">EN</a></li>
+          <li><a href="#" aria-label="Чешский язык">CH</a></li>
         </ul>
       </section>
-    </nav>
+    </div>
   </body>
 </html>

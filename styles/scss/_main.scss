@@ -11,7 +11,16 @@
   font-style: normal;
   font-weight: 500;
   src: url("../../assets/fonts/TTLakes-Regular.ttf"), url("../../assets/fonts/TTLakes-Regular.woff2") format("woff2"),
-    url("../../assets/fonts/TTLakes-Regular.woff") format("woff"), url("../../assets/fonts/TTLakes-Regular.eot") format("eot");
+    url("../../assets/fonts/TTLakes-Regular.woff") format("woff"),
+    url("../../assets/fonts/TTLakes-Regular.eot") format("eot");
+}
+@font-face {
+  font-family: "TTLakes Medium";
+  src: url("../../assets/fonts/TTLakes-Medium.eot");
+  src: url("../../assets/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("../../assets/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 *,
@@ -31,7 +40,8 @@ a:active {
   outline: none;
 }
 
-body,html {
+body,
+html {
   background-color: #f8f8f8;
   font-family: "TTLakes";
   font-weight: 500;
