@@ -581,6 +581,7 @@ label {
     width: 240px;
   }
   .brands__container {
+    max-width: 1056px;
     height: 192px;
     overflow: hidden;
   }

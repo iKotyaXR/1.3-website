@@ -9,6 +9,21 @@ function createSlider() {
         spaceBetween: 10,
         slideClass: "item",
         loop: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 1.3,
+            // slidesPerView: window.screen.width/246,
+            spaceBetween: 16,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2.7,
+            spaceBetween: 30,
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",

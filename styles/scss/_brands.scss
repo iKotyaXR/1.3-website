@@ -91,12 +91,13 @@
     &:last-of-type {
       justify-content: flex-start;
     }
-    &--empty{
+    &--empty {
       width: 240px;
     }
   }
   .brands {
     &__container {
+      max-width: 1056px;
       height: 192px;
       overflow: hidden;
     }
