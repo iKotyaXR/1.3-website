@@ -486,6 +486,9 @@ label {
     padding: 1.4vh 0px;
   }
 }
+.brands {
+  transition: 1s;
+}
 .brands__title {
   display: block;
   font-family: "TTLakes";
@@ -580,7 +583,12 @@ label {
   .item--empty {
     width: 240px;
   }
+  .brands {
+    height: 380px;
+    transition: 1s;
+  }
   .brands__container {
+    transition: height 1s;
     max-width: 1056px;
     height: 192px;
     overflow: hidden;
@@ -593,6 +601,12 @@ label {
   }
   .show-all img {
     transition: 0.5s;
+  }
+}
+@media (min-width: 992px) {
+  .brands {
+    height: 278px;
+    transition: 1s;
   }
 }
 .lenovo-logo::before {

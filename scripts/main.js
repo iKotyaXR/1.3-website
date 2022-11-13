@@ -1,6 +1,7 @@
 let container = document.querySelector(".brands__container");
 let Slider;
 let openned = false;
+
 function createSlider() {
   if (window.innerWidth < 768) {
     if (!container.classList.contains("swiper-initialized")) {
@@ -40,6 +41,8 @@ function createSlider() {
   }
 }
 
+createSlider();
+
 window.addEventListener("resize", () => {
   createSlider();
   if (window.innerWidth < 768) {
@@ -49,7 +52,6 @@ window.addEventListener("resize", () => {
     show_all.querySelector("img").style.transform = "rotate(0deg)";
   }
 });
-createSlider();
 
 let show_all = document.querySelector(".show-all");
 show_all.addEventListener("click", () => {
