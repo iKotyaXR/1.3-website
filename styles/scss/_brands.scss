@@ -1,0 +1,127 @@
+.brands {
+  &__title {
+    display: block;
+    font-family: "TTLakes";
+    font-weight: normal;
+    color: #7e7e82;
+    background-color: white;
+    padding: 16px;
+  }
+  &__container {
+    margin: 0 16px;
+    overflow: hidden;
+
+    &::before {
+      right: 0px;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5em;
+      z-index: 2;
+      background-image: linear-gradient(to right, transparent, #f8f8f8);
+      height: 15%;
+    }
+  }
+}
+
+.item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  background-color: white;
+  margin-top: 24px;
+  &__logo {
+    margin-left: 16px;
+  }
+
+  &__button {
+    display: block;
+    background: none;
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 16px;
+    transition: 0.3s;
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      border-right: 2px solid #ff3e79;
+      border-bottom: 2px solid #ff3e79;
+      width: 12px;
+      height: 12px;
+      left: 10px;
+      transform: rotate(-45deg);
+      transition: 0.3s;
+    }
+
+    &:hover,
+    :active {
+      transform: scale(1.2);
+      background-color: #ff3e79;
+      &::before {
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  margin-top: 16px;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background-color: #b5b6bc !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc !important;
+}
+
+.swiper-wrapper {
+  flex-wrap: nowrap;
+  justify-content: baseline;
+}
+
+.show-all {
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .item {
+    &:last-of-type {
+      justify-content: flex-start;
+    }
+    &--empty{
+      width: 240px;
+    }
+  }
+  .brands {
+    &__container {
+      height: 192px;
+      overflow: hidden;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .show-all {
+    display: block;
+    font-family: "TTLakes Medium";
+    margin-top: 24px;
+    margin-left: 16px;
+    & img {
+      transition: 0.5s;
+    }
+  }
+}
