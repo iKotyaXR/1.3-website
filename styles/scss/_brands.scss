@@ -10,17 +10,6 @@
   &__container {
     margin: 0 16px;
     overflow: hidden;
-
-    &::before {
-      right: 0px;
-      content: "";
-      display: block;
-      position: absolute;
-      width: 5em;
-      z-index: 2;
-      background-image: linear-gradient(to right, transparent, #f8f8f8);
-      height: 15%;
-    }
   }
 }
 
@@ -110,9 +99,6 @@
     &__container {
       height: 192px;
       overflow: hidden;
-      &::before {
-        display: none;
-      }
     }
   }
   .show-all {

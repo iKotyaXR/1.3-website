@@ -498,16 +498,6 @@ label {
   margin: 0 16px;
   overflow: hidden;
 }
-.brands__container::before {
-  right: 0px;
-  content: "";
-  display: block;
-  position: absolute;
-  width: 5em;
-  z-index: 2;
-  background-image: linear-gradient(to right, transparent, #f8f8f8);
-  height: 15%;
-}
 
 .item {
   flex-shrink: 0;
@@ -593,9 +583,6 @@ label {
   .brands__container {
     height: 192px;
     overflow: hidden;
-  }
-  .brands__container::before {
-    display: none;
   }
   .show-all {
     display: block;
